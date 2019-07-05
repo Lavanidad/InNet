@@ -20,8 +20,8 @@ public class Client {
         socket.setSoTimeout(3000);
         socket.connect(new InetSocketAddress(Inet4Address.getLocalHost(), 2000), 3000);
         System.out.println("已发起服务器连接");
-        System.out.println("客户端信息:" + socket.getLocalAddress() + "port:" + socket.getLocalPort());
-        System.out.println("服务器信息:" + socket.getInetAddress() + "port:" + socket.getPort());
+        System.out.println("客户端信息:" + socket.getLocalAddress() + " port:" + socket.getLocalPort());
+        System.out.println("服务器信息:" + socket.getInetAddress() + " port:" + socket.getPort());
         try {
             //发送数据
             todo(socket);

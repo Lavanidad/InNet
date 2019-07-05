@@ -15,7 +15,7 @@ public class Server {
     public static void main(String[] args) throws IOException {
         ServerSocket server = new ServerSocket(2000);
         System.out.println("服务器准备就绪");
-        System.out.println("服务器信息:" + server.getInetAddress() + "port:" + server.getLocalPort());
+        System.out.println("服务器信息:" + server.getInetAddress() + " port:" + server.getLocalPort());
 
         //等待客户端连接
         for (; ; ) {
@@ -41,7 +41,7 @@ public class Server {
         @Override
         public void run() {
             super.run();
-            System.out.println("新客户端连接:" + socket.getInetAddress() + "port:" + socket.getPort());
+            System.out.println("新客户端连接:" + socket.getInetAddress() + " port:" + socket.getPort());
             try {
                 //得到印流，用于数据输出，服务器回送数据使用
                 PrintStream socketOutput = new PrintStream(socket.getOutputStream());
