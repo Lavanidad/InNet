@@ -1,4 +1,4 @@
-package com.deepspring.demo.search;
+package com.deepspring.demo.udp;
 
 import java.io.IOException;
 import java.net.DatagramPacket;
@@ -10,7 +10,6 @@ import java.util.UUID;
  * Created by fzy on 2019/7/5.
  */
 public class UDPProvider {
-
 
     public static void main(String[] args) throws IOException {
         //生成一份唯一标识
