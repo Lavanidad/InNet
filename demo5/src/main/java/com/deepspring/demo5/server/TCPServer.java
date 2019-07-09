@@ -16,7 +16,6 @@ public class TCPServer {
     private final int port;
     private ClientListener mListener;
 
-
     public TCPServer(int port) {
         this.port = port;
     }

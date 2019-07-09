@@ -1,4 +1,4 @@
-package com.deepspring.demol5.constants;
+package com.deepspring.demo5.constants;
 
 /**
  * Created by fzy on 2019/7/8.

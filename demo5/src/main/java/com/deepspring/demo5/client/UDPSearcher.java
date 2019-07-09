@@ -2,7 +2,7 @@ package com.deepspring.demo5.client;
 
 
 import com.deepspring.demo5.client.bean.ServerInfo;
-import com.deepspring.demol5.constants.UDPConstants;
+import com.deepspring.demo5.constants.UDPConstants;
 import com.deepspring.lib2.utils.ByteUtils;
 
 import java.io.IOException;

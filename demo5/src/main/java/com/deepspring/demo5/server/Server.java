@@ -1,6 +1,7 @@
 package com.deepspring.demo5.server;
 
-import com.deepspring.demol5.constants.TCPConstants;
+
+import com.deepspring.demo5.constants.TCPConstants;
 
 import java.io.IOException;
 
@@ -9,7 +10,7 @@ import java.io.IOException;
  */
 public class Server {
     public static void main(String[] args) {
-       TCPServer tcpServer = new TCPServer(TCPConstants.PORT_SERVER);
+        TCPServer tcpServer = new TCPServer(TCPConstants.PORT_SERVER);
         boolean isSucceed = tcpServer.start();
         if (!isSucceed) {
             System.out.println("Start TCP Server failed!");
@@ -17,7 +18,7 @@ public class Server {
         }
 
         UDPProvider.start(TCPConstants.PORT_SERVER);
-        try{
+        try {
             //noinspection ResultOfMethodCallIgnored
             System.in.read();
         } catch (IOException e) {
